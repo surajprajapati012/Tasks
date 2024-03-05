@@ -1,0 +1,400 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ------------------------------------------------------First-sec------------------------------------------------- */
+
+.hero-section {
+    background: linear-gradient(rgba(195, 248, 139, 0.297), rgba(195, 248, 139, 0.297)), url(./images/Hero-sec/hero-background-img.WEBP);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 8rem 0 4rem 0;
+}
+
+.carousel-item a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    background: linear-gradient(rgba(255, 181, 36, 0.7), rgba(255, 181, 36, 0.7));
+}
+
+.carousel-item a:hover {
+    background-color: rgb(1, 41, 41);
+    border: 1px solid white;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    width: 48px;
+    height: 48px;
+    border-radius: 48px;
+    border: 1px solid rgb(155, 241, 26);
+    background: rgb(80, 128, 8);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-control-next {
+    margin-right: 20px;
+}
+
+.carousel-control-prev {
+    margin-left: 20px;
+}
+
+.text-color {
+    color: rgb(247, 176, 45);
+    font-size: 2rem;
+}
+
+.text-grn {
+    color: rgb(9, 249, 9);
+}
+
+.bg-color {
+    background-color: rgb(247, 176, 45);
+}
+
+.per p {
+    font-size: 1.2rem;
+    color: rgb(3, 110, 3);
+    text-align: justify;
+}
+
+.main-btn:hover {
+
+    background-color: rgb(47, 191, 11);
+    color: white;
+
+}
+
+.main-btn {
+    border-radius: 10px;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    font-size: 1.2rem;
+    background-color: rgb(41, 221, 68);
+    border: 2px solid rgb(160, 255, 136);
+    transition: 0.3s;
+}
+
+/* ------------------------------------------------------card-sec------------------------------------------------- */
+.sec-two {
+    padding: 3rem 0;
+}
+
+.feature-icon img {
+    width: 3.8rem;
+    mix-blend-mode: darken;
+}
+
+.features-box {
+    border: 0.15rem solid rgb(230, 240, 240);
+    transition: all 0.5s;
+    padding: 3.5rem 0 6rem 0;
+}
+
+.featue-icon-border {
+    border: 0.2rem solid rgb(237, 237, 237);
+    border-radius: 50%;
+    padding: 0.6rem;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.feature-icon {
+    background-color: rgb(229, 248, 233);
+    border-radius: 50%;
+    padding: 0.8rem 0.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.feature-text h3,
+.feature-text p {
+    margin-top: 2.8rem;
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+    transition: all 0.5s;
+}
+
+.features-box:hover {
+    background-color: black;
+    border-color: rgb(193, 243, 180);
+}
+
+.features-box:hover h3,
+.features-box:hover p {
+    color: white;
+}
+
+.features-box:hover .featue-icon-border {
+    border-color: rgb(151, 248, 127);
+}
+
+.features-box:hover .feature-icon {
+    background-color: rgb(205, 241, 205);
+}
+
+
+/* ------------------------------------------------------About-sec------------------------------------------------- */
+
+.bg-clr {
+    background-color: rgba(171, 252, 171, 0.338);
+}
+
+.about-img img {
+    position: relative;
+}
+
+.about-img::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    background-image: -webkit-repeating-radial-gradient(#2e2c2c38, #2e2c2c38 5px, transparent 5px, transparent 10px);
+    background-size: 20px 20px;
+    opacity: 0.4;
+    transform: skew(20deg);
+}
+
+/* ------------------------------------------------------Product-sec------------------------------------------------- */
+
+.title h3 {
+    font-size: 44px;
+    font-weight: 700;
+}
+
+.title p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.product-card {
+    overflow: hidden;
+    border: 0.2rem solid rgb(220, 247, 220);
+    margin: 1.3rem 0;
+    transition: 0.5s;
+}
+
+.product-img {
+    margin-bottom: 0.5rem;
+    text-align: center;
+    overflow: hidden;
+}
+
+.product-img img {
+    width: 100%;
+}
+.pro-btn {
+    margin-left: 23%;
+    display: none;
+    transition: 0.4s;
+}
+
+.pro-btn button {
+    background-color: rgb(177, 244, 119);
+    color: black;
+    width: 50%;
+    position: absolute;
+    padding: 0.5rem;
+    transition: 0.5s;
+    left: 0;
+    right: 0;
+}
+
+.pro-btn button:hover {
+    background-color: yellow;
+    color: black;
+    border: 2px solid rgb(155, 248, 155);
+}
+
+.product-card:hover .pro-btn {
+    display: block;
+}
+
+.product-card:hover img {
+    scale: 1.1;
+    transition: 0.3s;
+}
+
+@media (min-width: 376px) {
+    .product-card {
+        background-color: rgb(17, 158, 7);
+        color: white;
+    }
+    .pro-btn {
+        display: block;
+    }
+}
+
+@media (min-width: 576px) {
+    .product-card {
+        background-color: rgb(17, 158, 7);
+        box-shadow: 4px 4px 5px rgba(247, 166, 5, 0.674);
+        color: white;
+    }
+
+    .pro-btn {
+        display: block;
+    }
+}
+
+@media (min-width: 768px) {
+    .pro-btn {
+        display: block;
+    }
+}
+
+@media (min-width: 992px) {
+    .pro-btn {
+        display: none;
+    }
+}
+
+@media (min-width: 1200px) {
+    .pro-btn {
+        display: none;
+    }
+}
+
+/* ------------------------------------------------------Testimony-sec------------------------------------------------- */
+
+
+.carousel-indicators {
+    bottom: -3rem;
+}
+
+#carouselExampleIndicators .buttons {
+    background-color: rgb(23, 63, 1);
+    padding: 0.2rem 0;
+    border-radius: 20%;
+}
+
+.testymony-sec .card {
+    background-image: url(./images/testimonial/testimonial-bg.WEBP);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: right;
+    padding: 1rem 3rem;
+    border-radius: 0px 0.5rem 0.5rem 0;
+    border: 1px solid rgb(17, 240, 17);
+}
+
+.profile-box {
+    background-color: black;
+    padding: 1.5rem;
+}
+
+.profile-box img {
+    border-radius: 0.6rem 3rem;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.disc-box p {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.disc-box h4 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+/* ------------------------------------------------------Partner-sec------------------------------------------------- */
+.partner-sec-img img {
+    width: 100%;
+}
+
+.social-icons ul li {
+    display: inline;
+    margin: 0 0.5rem;
+}
+
+.social-icons i {
+    font-size: 20px;
+    color: black;
+    padding: 0.7rem;
+    background-color: rgb(159, 252, 170);
+    border-radius: 50%;
+}
+
+.social-icons i:hover {
+    color: rgb(134, 249, 142);
+    background-color: rgb(20, 20, 20);
+}
+
+.Gallry-sec .size,
+.Gallry-sec .size {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ------------------------------------------------------footer-sec------------------------------------------------- */
+
+.sub-btn {
+    background-color: rgb(158, 254, 94);
+    border: none;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+}
+
+.icons a,
+.links a {
+    color: white;
+}
+
+.icons a:hover {
+    /* padding: 0.2rem; */
+    background-color: rgb(0, 255, 13);
+    color: black;
+}
+
+.links li a:hover {
+    text-decoration: none;
+    color: rgb(144, 248, 140);
+}
+
+/* ------------------------------------------------------About-Page------------------------------------------------- */
+.banner-sec {
+    background-image: url(./images/About-page/Banner.WEBP);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 5rem 0;
+}
+
+.banner-text h1 {
+    font-size: 4rem;
+    margin: 5rem 0;
+}
+
+/* ------------------------------------------------------product-Page------------------------------------------------- */
+
+.stl{
+    background-color: rgba(171, 252, 171, 0.543);
+}
+#f-size{
+    font-size: 15px;
+}
+#p-btn button {
+    width: 60%;
+    bottom: 3.3rem;
+}
+#p-btn button{
+    margin-left: 20%;
+}
